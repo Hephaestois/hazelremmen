@@ -37,10 +37,22 @@ body {
     width: 70em;
     margin: 0 auto;
     font-family: Tahoma, Verdana, Arial, sans-serif;
+    background-color:slategray;
+    font-family: "Fira Code";
+}
+
+#Main {
+    padding-left: 2em;
+}
+
+pre {
+    font-family: "Fira Code";
+    font-size: large;
+    width: 1cm;
 }
 
 h1 {
-    font-family: fira-code-font;
+    text-shadow: 0px 0px 5px white;
 }
 
 
