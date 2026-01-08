@@ -1,0 +1,33 @@
+#navbar {
+    background-color: lightblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+  
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: gainsboro;
+}
+
+body {
+    width: 70em;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
