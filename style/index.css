@@ -2,6 +2,13 @@
     background-color: lightblue;
 }
 
+.fira-code-font {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,3 +38,9 @@ body {
     margin: 0 auto;
     font-family: Tahoma, Verdana, Arial, sans-serif;
 }
+
+h1 {
+    font-family: fira-code-font;
+}
+
+
