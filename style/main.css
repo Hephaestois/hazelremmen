@@ -1,0 +1,19 @@
+@import url(index.css);
+@import url(navbar.css);
+@import url(fonts.css);
+@import url(message.css);
+
+html {  
+    height: 100%;
+}
+
+body {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    background-color:rgb(135, 139, 162);
+    font-family: "Fira Code";
+    padding-bottom: 50px;
+}
+/* rgb(126, 122, 164); */

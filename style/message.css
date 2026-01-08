@@ -1,4 +1,4 @@
-#main {
+#message {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 3em;
@@ -8,19 +8,13 @@
     border-radius:10px;
 }
 
-#column-container {
-    width: 100%;
-    margin-bottom: 0em;
-    height: 100%;
-}
-
-pre {
-    font-family: "Fira Code";
-    font-size: large;
-}
-
-h1 {
+#message-title {
     text-shadow: 0px 0px 5px white;
 }
 
-
+#message-text {
+    font-family: "Fira Code";
+    font-size: large;
+    padding-left: 1em;
+    padding-right: 2em;
+}
