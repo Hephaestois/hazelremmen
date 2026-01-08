@@ -39,6 +39,8 @@ body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     background-color:slategray;
     font-family: "Fira Code";
+    box-shadow: 0px 0px 10px black;
+    padding-bottom: 50px
 }
 
 #Main {
