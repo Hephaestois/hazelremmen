@@ -16,4 +16,10 @@ body {
     font-family: "Fira Code";
     padding-bottom: 50px;
 }
+
+@media (min-width:769px){
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 /* rgb(126, 122, 164); */
