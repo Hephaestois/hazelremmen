@@ -18,12 +18,7 @@
     <h1></h1>
 
     
-<ul id="navbar">
-    <li><a href="../../index.html">Home</a></li>
-    <li><a href="../cv/cv.html">CV</a></li>
-    <li><a href="../cloud/cloud.html">File Sharing</a></li>
-    <li><a href="../motd/motd.html">Meme highlight</a></li>
-    </ul>
+<?php include 'navbar.php'; ?>
 
 
 <div id="message">

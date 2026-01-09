@@ -18,18 +18,10 @@
     <h1></h1>
 
     
-<ul id="navbar">
-    <li><a href="../../index.html">Home</a></li>
-    <li><a href="../cv/cv.html">CV</a></li>
-    <li><a href="../cloud/cloud.html">File Sharing</a></li>
-    <li><a href="../motd/motd.html">Meme highlight</a></li>
-    </ul>
+<?php include 'navbar.php'; ?>
 
 <div id="message">
-  <h1 id="message-title">This page will become more streamlined</h1>
-  <p id="message-text">(so that I don't have to edit raw HTML to update this)<br> 
-    However, here is the meme of the day:</p>
-  <img src="../../resources/motd.jpeg" width="100%">
+  <h1 id="message">Under construction (todo)</h1>
 </div>
 
 

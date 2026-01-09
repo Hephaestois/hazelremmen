@@ -18,12 +18,7 @@
     <h1></h1>
 
     
-<ul id="navbar">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="pages/cv/cv.html">CV</a></li>
-  <li><a href="pages/cloud/cloud.html">File Sharing</a></li>
-  <li><a href="pages/motd/motd.html">Meme highlight</a></li>
-</ul>
+<?php include 'navbar.php'; ?>
 
 <div id="message">
   <h1 id="message-title">A story about the order of time</h1>
