@@ -16,9 +16,8 @@
 
 <div id="column-container">
     <h1></h1>
-
-    
-  <?php include 'navbar.php'; ?>
+ 
+<?php require 'partials/navbar.php'; ?>
 
 <div id="message">
   <h1 id="message-title">This page will become more streamlined</h1>
