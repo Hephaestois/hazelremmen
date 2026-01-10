@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../config/bootstrap.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,7 @@
 <div id="column-container">
     <h1></h1>
  
-<?php require 'partials/navbar.php'; ?>
+<?php require __DIR__ . 'partials/navbar.php'; ?>
 
 <div id="message">
   <h1 id="message-title">This page will become more streamlined</h1>
