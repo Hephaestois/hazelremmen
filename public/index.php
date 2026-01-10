@@ -1,5 +1,3 @@
-<?php require __DIR__ . '/../config/bootstrap.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
