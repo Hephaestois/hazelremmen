@@ -1,3 +1,7 @@
+<?php
+require __DIR__ . '/../config/bootstrap.php';
+?>
+
 <ul id="navbar">
     <li><a href="/index.php">Home</a></li>
     <li><a href="/pages/cv/cv.php">CV</a></li>
