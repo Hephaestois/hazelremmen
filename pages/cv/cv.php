@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="../../style/main.css">
 
 <div id="column-container">
-    <h1></h1>
+<h1></h1>
 
-<?php require __DIR__ . 'partials/navbar.php'; ?>
+<?php require __DIR__ . '/partials/navbar.php'; ?>
 
 <div id="message">
   <h1 id="message">Under construction (todo)</h1>
