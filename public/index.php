@@ -1,6 +1,4 @@
-<?php
-require __DIR__ . '/../config/bootstrap.php';
-?>
+<?php require __DIR__ . '/../config/bootstrap.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +20,7 @@ require __DIR__ . '/../config/bootstrap.php';
     <h1></h1>
 
     
-<?php require 'partials/navbar.php'; ?>
+<?php require '../partials/navbar.php'; ?>
 
 <div id="message">
   <h1 id="message-title">A story about the order of time</h1>
