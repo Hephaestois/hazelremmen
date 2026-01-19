@@ -1,4 +1,3 @@
-<?php
 <ul id="navbar">
     <li><a href="/">Home</a></li>
     <li><a href="/pages/cv.php">CV</a></li>
