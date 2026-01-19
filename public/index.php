@@ -18,7 +18,7 @@
     <h1></h1>
 
     
-<?php require __DIR__ . '/partials/navbar.php'; ?>
+<?php require __DIR__ . '/../partials/navbar.php'; ?>
 
 <div id="message">
   <h1 id="message-title">A story about the order of time</h1>
