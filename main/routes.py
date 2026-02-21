@@ -18,4 +18,8 @@ def init_routes(app):
     
     @app.route('/login')
     def login():
-        return render_template("base.html", main_content="login", user=user)
+        return render_template("base.html", main_content="auth/login", user=user)
+    
+    @app.route('/register')
+    def register():
+        return render_template("base.html", main_content="auth/register", user=user)
