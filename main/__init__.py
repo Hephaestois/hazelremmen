@@ -10,7 +10,7 @@ def application(environ, start_response):
     template = env.get_template("templates/base.html")
 
     html = template.render(
-        random_num=random()
+        random_num=random(),
         main_content="blog"
     )
 
