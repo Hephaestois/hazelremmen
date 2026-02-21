@@ -4,6 +4,12 @@ from .routes import init_routes
 def create_app():
     app = Flask(__name__)
     init_routes(app)  # register routes
+    
+    from . import auth
+    from . import db
+    
+    app.register_blueprint(auth.bp)
+    
     return app
 
 # Optional: for WSGI directly
