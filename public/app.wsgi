@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 from random import random
 
 env = Environment(
-    loader=FileSystemLoader('/var/www/hazelremmen'),
+    loader=FileSystemLoader('/var/www/hazelremmen/public'),
 )
 
 def application(environ, start_response):
