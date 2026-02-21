@@ -1,7 +1,5 @@
 import sys
+# So that below import can be found
 sys.path.insert(0, "/var/www/hazelremmen")
-sys.path.insert(0, "/var/www/hazelremmen/templates")
-
-print(sys.path)
 
 from main import application
