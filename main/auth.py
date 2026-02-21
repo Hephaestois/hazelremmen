@@ -11,9 +11,9 @@ from werkzeug.security import generate_password_hash
 
 def get_db(): pass
 
-bp = Blueprint("login", __name__, url_prefix="/login")
+# bp = Blueprint("login", __name__, url_prefix="/register")
 
-@bp.route("/login", methods=("GET", "POST"))
+# @bp.route("/register", methods=("GET", "POST"))
 def register():
     """
     Generate a new user. 
@@ -46,7 +46,7 @@ def register():
         
         flash(error)
         
-    return render_template("auth/login.html")
+    return render_template("auth/register.html")
 
 
 
