@@ -6,6 +6,6 @@ def init_routes(app):
     def index():
         return render_template("base.html", main_content="blog", random_num=random())
     
-    @app.route('/MOTD')
+    @app.route('/motd')
     def index():
         return render_template("base.html", main_content="motd")
