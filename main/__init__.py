@@ -7,10 +7,11 @@ env = Environment(
 )
 
 def application(environ, start_response):
-    template = env.get_template("templates/index.html")
+    template = env.get_template("templates/base.html")
 
     html = template.render(
         random_num=random()
+        main_content="blog"
     )
 
     start_response("200 OK", [("Content-Type", "text/html")])

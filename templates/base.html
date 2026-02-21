@@ -10,19 +10,17 @@
   <title>Hazels abode</title>
 </head>
 
-
 <body>
-<link rel="stylesheet" href="../../style/main.css">
+<link rel="stylesheet" href="/style/main.css">
 
 <div id="column-container">
-<h1></h1>
+    <h1></h1>
+<!-- Above h1 are for spacing -->
 
-<?php require __DIR__ . '/../partials/navbar.php'; ?>
+{%- set bodycontent = "blog" -%}
+{% include "partials/navbar.html" %}
 
-
-<div id="message">
-    <h1 id="message">Under construction (future plan)</h1>
-</div>
+{% include "pages/blog.html" %}
 
 </div>
 </body>
