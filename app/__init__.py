@@ -7,7 +7,7 @@ env = Environment(
 )
 
 def application(environ, start_response):
-    template = env.get_template("index.html.j2")
+    template = env.get_template("index.html")
 
     html = template.render(
         random_num=random()
