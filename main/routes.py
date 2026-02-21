@@ -16,10 +16,10 @@ def init_routes(app):
     def motd():
         return render_template("base.html", main_content="motd", user=user)
     
-    @app.route('/login')
+    @app.route('/login', methods=("GET", "POST"))
     def login():
         return render_template("base.html", main_content="auth/login", user=user)
     
-    @app.route('/register')
+    @app.route('/register', methods=("GET", "POST"))
     def register():
         return render_template("base.html", main_content="auth/register", user=user)
