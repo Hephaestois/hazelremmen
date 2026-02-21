@@ -7,7 +7,9 @@ from flask import url_for
 from flask import render_template
 from werkzeug.security import generate_password_hash
 
-from . import get_db
+# from . import get_db
+
+def get_db(): pass
 
 bp = Blueprint("login", __name__, url_prefix="/login")
 
