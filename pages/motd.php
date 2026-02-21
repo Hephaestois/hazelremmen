@@ -12,7 +12,7 @@
 
 
 <body>
-<link rel="stylesheet" href="../../style/main.css">
+<link rel="stylesheet" href="/style/main.css">
 
 <div id="column-container">
 <h1></h1>
