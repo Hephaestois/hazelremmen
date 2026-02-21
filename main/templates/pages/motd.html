@@ -5,5 +5,5 @@
   <p id="message-text">(so that I don't have to edit raw HTML to update this)<br> 
     Here is the meme of the day:</p>
     {% include "resources/test.html" %}
-  <img src="resources/motd.jpeg" width="100%">
+  <img src="{{ url_for('static', filename='resources/image.jpg') }}" alt="MOTD Image">
 </div>
