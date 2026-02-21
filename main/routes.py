@@ -15,3 +15,7 @@ def init_routes(app):
     @app.route('/motd')
     def motd():
         return render_template("base.html", main_content="motd", user=user)
+    
+    @app.route('/login')
+    def login():
+        return render_template("base.html", main_content="login", user=user)
