@@ -11,9 +11,9 @@ from werkzeug.security import generate_password_hash
 
 def get_db(): pass
 
-# bp = Blueprint("login", __name__, url_prefix="/register")
+bp = Blueprint("register", __name__, url_prefix="/register")
 
-# @bp.route("/register", methods=("GET", "POST"))
+@bp.route("/register", methods=("GET", "POST"))
 def register():
     """
     Generate a new user. 
