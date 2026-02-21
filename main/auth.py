@@ -19,7 +19,7 @@ def register():
     Generate a new user. 
     If user exists, log them in.
     """
-    
+    print("Made it to the function!")
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
