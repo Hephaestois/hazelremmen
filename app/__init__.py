@@ -2,12 +2,12 @@ from jinja2 import Environment, FileSystemLoader
 from random import random
 
 env = Environment(
-    loader=FileSystemLoader('/var/www/hazelremmen/templates'),
+    loader=FileSystemLoader('/var/www/hazelremmen'),
     auto_reload=True
 )
 
 def application(environ, start_response):
-    template = env.get_template("index.html")
+    template = env.get_template("templates/index.html")
 
     html = template.render(
         random_num=random()
