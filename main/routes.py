@@ -7,5 +7,5 @@ def init_routes(app):
         return render_template("base.html", main_content="blog", random_num=random())
     
     @app.route('/motd')
-    def index():
+    def motd():
         return render_template("base.html", main_content="motd")
