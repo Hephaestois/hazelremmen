@@ -1,18 +1,10 @@
-from jinja2 import Environment, FileSystemLoader
-from random import random
+from flask import Flask
+from .routes import init_routes
 
-env = Environment(
-    loader=FileSystemLoader('/var/www/hazelremmen'),
-    auto_reload=True
-)
+def create_app():
+    app = Flask(__name__)
+    init_routes(app)  # register routes
+    return app
 
-def application(environ, start_response):
-    template = env.get_template("templates/base.html")
-
-    html = template.render(
-        random_num=random(),
-        main_content="blog"
-    )
-
-    start_response("200 OK", [("Content-Type", "text/html")])
-    return [html.encode("utf-8")]
+# Optional: for WSGI directly
+application = create_app()
