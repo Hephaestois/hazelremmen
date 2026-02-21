@@ -6,9 +6,10 @@ from flask import redirect
 from flask import url_for
 from flask import render_template
 from werkzeug.security import generate_password_hash
+
 from . import get_db
 
-bp = Blueprint("auth", __name__, url_prefix="/auth")
+bp = Blueprint("login", __name__, url_prefix="/login")
 
 @bp.route("/login", methods=("GET", "POST"))
 def register():
