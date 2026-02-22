@@ -1,5 +1,7 @@
 from flask import render_template
 from random import random
+from flask import g
+from flask import session
 
 class user:
     def __init__(self):

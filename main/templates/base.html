@@ -13,14 +13,21 @@
 
 <body>
 <div id="column-container">
-    <h1></h1>
+<h1></h1>
 <!-- Above h1 are for spacing -->
+
+<!-- Include the Navbar on each page -->
 {% if user %}
 {% include "partials/navbar.html" %}
 {% endif %} 
 
-{% block content %}
-{% endblock %}
+<!-- Optionally display the flash messages -->
+{% for message in get_flashed_messages() %}
+<div class="flash">{{message}}</div>
+{% endfor %}
+
+<!-- Facilitate a location for the 'main' content -->
+{% block content %}{% endblock %}
 </div>
 </body>
 </html>

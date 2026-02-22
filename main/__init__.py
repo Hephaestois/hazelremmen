@@ -5,6 +5,9 @@ def create_app():
     app = Flask(__name__)
     init_routes(app)  # register routes
     
+    from . import db
+    db.init_app(app)
+    
     from . import auth
     app.register_blueprint(auth.bp) # adds the routes defined in the blueprint from base "auth".
     
