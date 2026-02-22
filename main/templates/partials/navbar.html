@@ -1,6 +1,6 @@
 <ul id="navbar">
     {# Greet user if authenticated, otherwise provide auth path #}
-    {% if user.logged_in %}
+    {% if user %}
         <li><a>Hello, {{ user.name }}!</a></li>
     {% else %}
         <li><a href="/auth/login">Login</a></li>
