@@ -3,6 +3,7 @@ from .routes import init_routes
 
 def create_app():
     app = Flask(__name__)
+    app.secret_key="Gc40>x1uwIvNms£868E4gQL"
     init_routes(app)  # register routes
     
     from . import db

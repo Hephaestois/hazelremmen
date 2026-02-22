@@ -17,9 +17,7 @@
 <!-- Above h1 are for spacing -->
 
 <!-- Include the Navbar on each page -->
-{% if user %}
 {% include "partials/navbar.html" %}
-{% endif %} 
 
 <!-- Optionally display the flash messages -->
 {% for message in get_flashed_messages() %}
