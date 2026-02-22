@@ -42,12 +42,18 @@ def register():
             except db.IntegrityError:
                 error = f"User {username} already exists!"                
             else:
-                return redirect(url_for("auth.register"))
+                return redirect(url_for("auth.login"))
         
         flash(error)
         
     return render_template("pages/auth/register.html")
 
 
+@bp.route("/login", methods=("GET", "POST"))
+def login():
+    """
+    Log in if an account is found.
+    """
+    return render_template("pages/auth/login.html")
 
 
