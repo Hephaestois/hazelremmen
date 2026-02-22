@@ -47,7 +47,7 @@ def register():
         
         flash(error)
         
-    return render_template("auth/register.html")
+    return render_template("pages/auth/register.html")
 
 
 @bp.route("/login", methods=("GET", "POST"))
@@ -55,4 +55,4 @@ def login():
     """
     Log in if an account is found.
     """
-    return render_template("auth/login")
+    return render_template("pages/auth/login.html")
