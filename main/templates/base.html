@@ -17,7 +17,10 @@
 <!-- Above h1 are for spacing -->
 {% include "partials/navbar.html" %}
 
-{% include "pages/" ~ main_content ~ ".html" %}
+{% block content %}
+{% endblock %}
+
+<!-- {% include "pages/" ~ main_content ~ ".html" %} -->
 </div>
 </body>
 </html>

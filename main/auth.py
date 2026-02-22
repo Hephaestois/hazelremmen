@@ -13,6 +13,7 @@ def get_db(): pass
 
 bp = Blueprint("auth", __name__, url_prefix="/auth")
 
+# Bind 'register' to the following function. return render_template defines the content to be rendered
 @bp.route("/register", methods=("GET", "POST"))
 def register():
     """
@@ -46,7 +47,7 @@ def register():
         
         flash(error)
         
-    return render_template("base.html", main_content="auth/register")
+    return render_template("auth/register.html")
 
 
 @bp.route("/login", methods=("GET", "POST"))
@@ -54,6 +55,4 @@ def login():
     """
     Log in if an account is found.
     """
-    return render_template("base.html", main_content="auth/register")
-
-
+    return render_template("auth/login")

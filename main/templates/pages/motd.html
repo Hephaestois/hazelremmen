@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %} 
 <div id="column-container">
 <h1></h1>
 <div id="message">
@@ -7,3 +10,4 @@
   <img src="{{ url_for('static', filename='resources/motd.jpeg') }}" alt="MOTD Image">
 </div>
 </div>
+{% endblock %}
