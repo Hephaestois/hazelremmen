@@ -8,7 +8,7 @@ from flask import url_for
 from flask import render_template
 from werkzeug.security import generate_password_hash
 
-# from . import get_db
+from .db import get_db
 
 def get_db(): pass
 
@@ -43,8 +43,8 @@ def register():
                 #)
             except db.IntegrityError:
                 error = f"User {username} already exists!"                
-            else:
-                error="Authentication probably not successful! (no DB connected)"
+            else: # No exception
+                error="Authentication probably not successful! (no DB connected) but the function works!"
                 flash(error)
                 return redirect(url_for("auth.login"))
         
