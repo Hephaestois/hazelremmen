@@ -3,7 +3,7 @@
     {% if user.logged_in %}
         <li><a>Hello, {{ user.name }}!</a></li>
     {% else %}
-        <li><a href="/login">Login</a></li>
+        <li><a href="/auth/login">Login</a></li>
     {% endif %}
     {# navbar #}
     <li><a href="/">Home</a></li>
