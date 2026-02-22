@@ -44,6 +44,8 @@ def register():
             except db.IntegrityError:
                 error = f"User {username} already exists!"                
             else:
+                error="Authentication probably not successful! (no DB connected)"
+                flash(error)
                 return redirect(url_for("auth.login"))
         
         flash(error)
