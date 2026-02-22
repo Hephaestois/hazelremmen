@@ -15,7 +15,9 @@
 <div id="column-container">
     <h1></h1>
 <!-- Above h1 are for spacing -->
+{% if user %}
 {% include "partials/navbar.html" %}
+{% endif %} 
 
 {% block content %}
 {% endblock %}
