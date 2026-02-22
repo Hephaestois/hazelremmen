@@ -6,7 +6,6 @@ def create_app():
     init_routes(app)  # register routes
     
     from . import auth
-    
     app.register_blueprint(auth.bp)
     
     return app
